@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:green_mart/core/colors.dart';
+import 'package:green_mart/core/styles/app_colors.dart';
 import 'package:green_mart/features/intro/screens/splash_screen.dart';
 
 class GreenMart extends StatelessWidget {
