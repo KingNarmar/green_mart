@@ -1,4 +1,4 @@
-abstract class Pictures {
+abstract class AppPictures {
   static const String onbordingPic = "assets/Pictures/logo.svg";
   static const String logo = "assets/Pictures/logo.svg";
   static const String done = "assets/Pictures/done_icon.svg";

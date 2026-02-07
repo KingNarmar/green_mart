@@ -1,0 +1,18 @@
+import 'package:flutter/material.dart';
+
+abstract class TextStyles {
+  static const TextStyle title = TextStyle(
+    fontSize: 22,
+    fontWeight: FontWeight.w600,
+  );
+
+  static const TextStyle supTitle = TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.w500,
+  );
+
+  static const TextStyle normalText = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w400,
+  );
+}

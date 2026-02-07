@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:green_mart/core/constants/app_fonts.dart';
 import 'package:green_mart/core/styles/app_colors.dart';
 import 'package:green_mart/features/intro/screens/splash_screen.dart';
 
@@ -8,7 +9,14 @@ class GreenMart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(scaffoldBackgroundColor: AppColors.white),
+      theme: ThemeData(
+        fontFamily: AppFonts.poppins,
+        scaffoldBackgroundColor: AppColors.white,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: AppColors.primaryColor,
+          onSurface: AppColors.blackColor,
+        ),
+      ),
       home: SplashScreen(),
     );
   }
