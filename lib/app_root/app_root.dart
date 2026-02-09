@@ -16,7 +16,21 @@ class GreenMart extends StatelessWidget {
           seedColor: AppColors.primaryColor,
           onSurface: AppColors.blackColor,
         ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: AppColors.primaryColor,
+            minimumSize: const Size(double.infinity, 55),
+
+            foregroundColor: AppColors.white,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadiusGeometry.circular(15),
+            ),
+          ),
+        ),
       ),
+      builder: (context, child) {
+        return SafeArea(top: false, child: child ?? SizedBox());
+      },
       home: SplashScreen(),
     );
   }
