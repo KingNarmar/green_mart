@@ -50,7 +50,7 @@ class OnbordingScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 35),
-                MainButton(onPressed: () {}, text: "Get Started"),
+                MainButton(onPressed: () {}, text: "Get Started "),
               ],
             ),
           ),
