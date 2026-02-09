@@ -1,16 +1,42 @@
-# green_mart
+# GreenMart
 
-A new Flutter project.
+A Flutter UI implementation based on the provided Figma design.  
+This project was developed as **Task – Session 10** during the Flutter course.
 
-## Getting Started
+The current implementation covers the first two screens:
 
-This project is a starting point for a Flutter application.
+- Splash Screen
+- Onboarding Screen
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## ✨ Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Clean and structured UI
+- Reusable theming and styling
+- Responsive layout basics
+- Following Flutter best practices
+
+---
+
+## 📸 Screenshots
+
+### Splash Screen
+
+![Splash Screen](screen_shots/plash_screen.png)
+
+### Onboarding Screen
+
+![Onboarding Screen](screen_shots/onbording_screen.png)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Flutter SDK
+- Dart SDK
+- VS Code
+
+
