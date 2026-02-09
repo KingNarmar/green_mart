@@ -23,13 +23,11 @@ The current implementation covers the first two screens:
 
 ### Splash Screen
 
-![Splash Screen](screen_shots/splash_screen.png)
+<img src="screen_shots/splash_screen.png" width="300"/>
 
 ### Onboarding Screen
 
-![Onboarding Screen](screen_shots/onbording_screen.png)
-
----
+## <img src="screen_shots/onbording_screen.png" width="300"/>
 
 ## 🚀 Getting Started
 
