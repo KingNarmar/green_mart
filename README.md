@@ -23,7 +23,7 @@ The current implementation covers the first two screens:
 
 ### Splash Screen
 
-![Splash Screen](screen_shots/plash_screen.png)
+![Splash Screen](screen_shots/splash_screen.png)
 
 ### Onboarding Screen
 
@@ -38,5 +38,3 @@ The current implementation covers the first two screens:
 - Flutter SDK
 - Dart SDK
 - VS Code
-
-
