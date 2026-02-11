@@ -7,3 +7,7 @@ bool isEmailValid(String email) {
 bool isPasswordValid(String password) {
   return RegExp(r"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$").hasMatch(password);
 }
+
+bool isNameValid(String name) {
+  return RegExp(r"^[a-zA-Zs'-]+$").hasMatch(name);
+}
