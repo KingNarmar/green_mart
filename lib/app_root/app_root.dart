@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:green_mart/core/constants/app_fonts.dart';
 import 'package:green_mart/core/styles/app_colors.dart';
+import 'package:green_mart/core/styles/text_styles.dart';
 import 'package:green_mart/features/intro/screens/splash_screen.dart';
 
 class GreenMart extends StatelessWidget {
@@ -25,6 +26,15 @@ class GreenMart extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadiusGeometry.circular(15),
             ),
+          ),
+        ),
+        inputDecorationTheme: InputDecorationTheme(
+          hintStyle: TextStyles.caption2,
+          fillColor: AppColors.accentColor,
+          filled: true,
+          border: OutlineInputBorder(
+            borderSide: BorderSide.none,
+            borderRadius: BorderRadius.circular(20),
           ),
         ),
       ),

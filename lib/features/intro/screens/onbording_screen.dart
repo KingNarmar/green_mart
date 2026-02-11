@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:green_mart/core/components/main_button.dart';
 import 'package:green_mart/core/constants/app_pictures.dart';
+import 'package:green_mart/core/functions/navigations.dart';
 import 'package:green_mart/core/styles/app_colors.dart';
 import 'package:green_mart/core/styles/text_styles.dart';
+import 'package:green_mart/features/auth/screens/login_screen.dart';
 
 class OnbordingScreen extends StatelessWidget {
   const OnbordingScreen({super.key});
@@ -50,7 +52,12 @@ class OnbordingScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 35),
-                MainButton(onPressed: () {}, text: "Get Started "),
+                MainButton(
+                  onPressed: () {
+                    pushReplacment(LoginScreen(), context);
+                  },
+                  text: "Get Started ",
+                ),
               ],
             ),
           ),

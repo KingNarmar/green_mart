@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:green_mart/core/styles/app_colors.dart';
 
 abstract class TextStyles {
   static const TextStyle headLine = TextStyle(
@@ -18,5 +19,10 @@ abstract class TextStyles {
   static const TextStyle normalText = TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.w400,
+  );
+  static const TextStyle caption1 = TextStyle(fontSize: 14);
+  static const TextStyle caption2 = TextStyle(
+    fontSize: 12,
+    color: AppColors.greyColor,
   );
 }
