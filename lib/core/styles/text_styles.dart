@@ -20,9 +20,13 @@ abstract class TextStyles {
     fontSize: 12,
     fontWeight: FontWeight.w400,
   );
-  static const TextStyle caption1 = TextStyle(fontSize: 14);
+  static const TextStyle caption1 = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w600,
+  );
   static const TextStyle caption2 = TextStyle(
     fontSize: 12,
     color: AppColors.greyColor,
+    fontWeight: FontWeight.w600,
   );
 }

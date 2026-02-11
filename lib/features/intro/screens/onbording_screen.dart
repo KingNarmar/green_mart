@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:green_mart/core/components/main_button.dart';
+import 'package:green_mart/core/widgets/main_button.dart';
 import 'package:green_mart/core/constants/app_pictures.dart';
 import 'package:green_mart/core/functions/navigations.dart';
 import 'package:green_mart/core/styles/app_colors.dart';
