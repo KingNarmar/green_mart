@@ -8,6 +8,7 @@ import 'package:green_mart/core/styles/text_styles.dart';
 import 'package:green_mart/core/widgets/custom_text_form_field.dart';
 import 'package:green_mart/core/widgets/main_button.dart';
 import 'package:green_mart/core/widgets/password_text_form_field.dart';
+import 'package:green_mart/features/auth/screens/sign_up_screen.dart';
 import 'package:green_mart/features/auth/widgets/auth_footer.dart';
 import 'package:green_mart/features/explore/screens/home_screen.dart';
 
@@ -98,7 +99,13 @@ class _LoginScreenState extends State<LoginScreen> {
                 },
               ),
               SizedBox(height: 25),
-              AuthFooter(text: "Don't have an account", textButton: "Sign Up"),
+              AuthFooter(
+                text: "Don't have an account",
+                textButton: "Sign Up",
+                onPressed: () {
+                  pushReplacment(SignUpScreen(), context);
+                },
+              ),
             ],
           ),
         ),

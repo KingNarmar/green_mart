@@ -3,9 +3,10 @@ import 'package:green_mart/core/styles/app_colors.dart';
 import 'package:green_mart/core/styles/text_styles.dart';
 
 class AuthFooter extends StatelessWidget {
-  const AuthFooter({super.key, required this.text, required this.textButton});
+  const AuthFooter({super.key, required this.text, required this.textButton, this.onPressed});
   final String text;
   final String textButton;
+  final void Function()? onPressed;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -18,7 +19,7 @@ class AuthFooter extends StatelessWidget {
               WidgetSpan(
                 alignment: PlaceholderAlignment.middle,
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: onPressed,
                   child: Text(
                     textButton,
                     style: TextStyles.caption2.copyWith(
