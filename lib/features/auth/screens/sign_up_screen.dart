@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:green_mart/core/constants/app_pictures.dart';
+import 'package:green_mart/core/functions/navigations.dart';
 import 'package:green_mart/core/functions/validations.dart';
 import 'package:green_mart/core/styles/app_colors.dart';
 import 'package:green_mart/core/styles/text_styles.dart';
 import 'package:green_mart/core/widgets/custom_text_form_field.dart';
 import 'package:green_mart/core/widgets/main_button.dart';
 import 'package:green_mart/core/widgets/password_text_form_field.dart';
+import 'package:green_mart/features/auth/screens/number_screen.dart';
 import 'package:green_mart/features/auth/widgets/auth_footer.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -94,7 +96,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
               MainButton(
                 text: "Sign Up",
                 onPressed: () {
-                  if (formKey.currentState!.validate()) {}
+                  if (formKey.currentState!.validate()) {
+                    pushReplacment(NumberScreen(), context);
+                  }
                 },
               ),
               SizedBox(height: 25),

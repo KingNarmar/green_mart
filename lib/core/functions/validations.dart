@@ -11,3 +11,7 @@ bool isPasswordValid(String password) {
 bool isNameValid(String name) {
   return RegExp(r"^[a-zA-Zs'-]+$").hasMatch(name);
 }
+
+bool isEgyNymberValid(String number) {
+  return RegExp(r'^01[0125][0-9]{8}$').hasMatch(number);
+}
