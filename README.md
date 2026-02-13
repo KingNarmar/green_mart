@@ -55,25 +55,27 @@ This project demonstrates clean UI implementation, reusable components, feature-
 
 ---
 
-# 🏗 Project Structure
+## 🏗 Project Structure
 
 The project follows a feature-based structure with separation of concerns:
 
+```
 lib/
 ├── core/
-│ ├── constants/
-│ ├── functions/
-│ ├── styles/
-│ └── widgets/
+│   ├── constants/
+│   ├── functions/
+│   ├── styles/
+│   └── widgets/
 │
 ├── features/
-│ └── auth/
-│ ├── functions/
-│ ├── screens/
-│ └── widgets/
+│   └── auth/
+│       ├── functions/
+│       ├── screens/
+│       └── widgets/
 │
 ├── intro/
 └── explore/
+```
 
 ### Structure Explanation
 
@@ -82,6 +84,7 @@ lib/
 - **functions/** → Logic separated from UI (e.g., OTP timer)
 - **widgets/** → Reusable UI components
 - **styles/** → Centralized theme management
+
 
 ---
 
