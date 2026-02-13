@@ -10,22 +10,26 @@ This project demonstrates clean UI implementation, reusable components, feature-
 # 🟢 Session 10 – Intro Flow
 
 ### Implemented Screens:
+
 - Splash Screen
 - Onboarding Screen
 
 ## 📸 Screenshots
 
 ### Splash Screen
+
 <img src="screen_shots/splash_screen.png" width="300"/>
 
 ### Onboarding Screen
-<img src="screen_shots/onboarding_screen.png" width="300"/>
+
+<img src="screen_shots/onbording_screen.png" width="300"/>
 
 ---
 
 # 🟢 Session 11 – Authentication Flow
 
 ### Implemented Screens:
+
 - Login Screen
 - Sign Up Screen
 - Enter Mobile Number Screen
@@ -34,15 +38,19 @@ This project demonstrates clean UI implementation, reusable components, feature-
 ## 📸 Screenshots
 
 ### Login Screen
+
 <img src="screen_shots/login_screen.png" width="300"/>
 
 ### Sign Up Screen
+
 <img src="screen_shots/sign_up_screen.png" width="300"/>
 
 ### Enter Mobile Number Screen
+
 <img src="screen_shots/number_screen.png" width="300"/>
 
 ### OTP Verification Screen
+
 <img src="screen_shots/verification_screen.png" width="300"/>
 
 ---
@@ -52,7 +60,6 @@ This project demonstrates clean UI implementation, reusable components, feature-
 The project follows a feature-based structure with separation of concerns:
 
 lib/
-│
 ├── core/
 │ ├── constants/
 │ ├── functions/
@@ -96,4 +103,3 @@ lib/
 - flutter_svg
 - pinput
 - cupertino_icons
-
