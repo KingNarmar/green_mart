@@ -103,7 +103,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 text: "Don't have an account",
                 textButton: "Sign Up",
                 onPressed: () {
-                  pushReplacment(SignUpScreen(), context);
+                  pushTo(SignUpScreen(), context);
                 },
               ),
             ],

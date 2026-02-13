@@ -97,7 +97,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 text: "Sign Up",
                 onPressed: () {
                   if (formKey.currentState!.validate()) {
-                    pushReplacment(NumberScreen(), context);
+                    pushTo(NumberScreen(), context);
                   }
                 },
               ),

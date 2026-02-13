@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:green_mart/core/constants/app_fonts.dart';
 import 'package:green_mart/core/styles/app_colors.dart';
 import 'package:green_mart/core/styles/text_styles.dart';
-import 'package:green_mart/features/auth/screens/number_screen.dart';
+import 'package:green_mart/features/intro/screens/splash_screen.dart';
 
 class GreenMart extends StatelessWidget {
   const GreenMart({super.key});
@@ -41,7 +41,7 @@ class GreenMart extends StatelessWidget {
       builder: (context, child) {
         return SafeArea(top: false, child: child ?? SizedBox());
       },
-      home: NumberScreen(),
+      home: SplashScreen(),
     );
   }
 }

@@ -19,6 +19,7 @@ class _NumberScreenState extends State<NumberScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(backgroundColor: AppColors.white),
       body: Padding(
         padding: const EdgeInsets.all(20),
         child: Form(
