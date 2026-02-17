@@ -6,11 +6,12 @@ class CustomTextFormField extends StatelessWidget {
     super.key,
     required this.hint,
     this.keyboardType,
-    this.validator,
+    this.validator, this.icon,
   });
   final String hint;
   final TextInputType? keyboardType;
   final String? Function(String?)? validator;
+  final IconButton? icon;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
@@ -21,6 +22,7 @@ class CustomTextFormField extends StatelessWidget {
       decoration: InputDecoration(
         hintText: hint,
         hintStyle: TextStyles.caption2.copyWith(fontSize: 14),
+        prefixIcon:icon,
       ),
       validator: validator,
       onChanged: (value) {},
