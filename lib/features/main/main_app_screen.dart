@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:green_mart/core/constants/app_pictures.dart';
 import 'package:green_mart/core/styles/app_colors.dart';
 import 'package:green_mart/core/widgets/custom_svg_picture.dart';
+import 'package:green_mart/features/home/screens/accoount_screen.dart';
+import 'package:green_mart/features/home/screens/cart_screen.dart';
+import 'package:green_mart/features/home/screens/explore_screen.dart';
+import 'package:green_mart/features/home/screens/favoraits_screen.dart';
 import 'package:green_mart/features/home/screens/home_screen.dart';
 
 class MainAppScreen extends StatefulWidget {
@@ -13,9 +17,19 @@ class MainAppScreen extends StatefulWidget {
 
 class _MainAppScreenState extends State<MainAppScreen> {
   int selectedIndex = 0;
+  List<Widget> screens = [
+    HomeScreen(),
+    ExploreScreen(),
+    CartScreen(),
+    FavoraitsScreen(),
+    AccoountScreen(),
+  ];
   @override
   Widget build(BuildContext context) {
-    return Scaffold(bottomNavigationBar: _navBar(), body: HomeScreen());
+    return Scaffold(
+      bottomNavigationBar: _navBar(),
+      body: screens[selectedIndex],
+    );
   }
 
   Container _navBar() {
