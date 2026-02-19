@@ -14,4 +14,5 @@ abstract class AppPictures {
   static const String ginger = "assets/Pictures/ginger.png";
   static const String pepper = "assets/Pictures/pepper.png";
   static const String addItemSVG = "assets/icons/add_item.svg";
+  static const String profilePic = "assets/Pictures/profile.jpg";
 }

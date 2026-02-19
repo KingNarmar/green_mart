@@ -6,10 +6,8 @@ import 'package:green_mart/core/widgets/custom_svg_picture.dart';
 import 'package:green_mart/core/widgets/custom_text_form_field.dart';
 import 'package:green_mart/features/home/data/category_model.dart';
 import 'package:green_mart/features/home/widgets/category_card.dart';
-
 class ExploreScreen extends StatelessWidget {
   const ExploreScreen({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
