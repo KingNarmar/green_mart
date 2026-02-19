@@ -15,4 +15,14 @@ abstract class AppPictures {
   static const String pepper = "assets/Pictures/pepper.png";
   static const String addItemSVG = "assets/icons/add_item.svg";
   static const String profilePic = "assets/Pictures/profile.jpg";
+  static const String ordersIconSVG = "assets/icons/orders_icon.svg";
+  static const String myDetailsIconSVG = "assets/icons/my_details icon.svg";
+  static const String deliveryIconSVG =
+      "assets/icons/delivery_address_icon.svg";
+  static const String paymentIconSVG = "assets/icons/payment_methods_icon.svg";
+  static const String promoIconSVG = "assets/icons/promo_code_icon.svg";
+  static const String notifecationsIconSVG =
+      "assets/icons/notifecations_icon.svg";
+  static const String helpIconSVG = "assets/icons/help_icon.svg";
+  static const String aboutIconSVG = "assets/icons/about_icon.svg";
 }

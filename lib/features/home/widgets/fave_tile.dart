@@ -12,10 +12,11 @@ class FaveTile extends StatelessWidget {
         padding: const EdgeInsets.only(right: 40),
         child: Image.network(model.pic, height: 100),
       ),
-      title: Expanded(
-        child: Padding(
-          padding: const EdgeInsets.only(bottom: 5),
-          child: Text(model.title, style: TextStyles.title),
+      title: Padding(
+        padding: const EdgeInsets.only(bottom: 5),
+        child: Text(
+          model.title,
+          style: TextStyles.normalText.copyWith(fontSize: 14),
         ),
       ),
       subtitle: Text(model.supTitle, style: TextStyles.normalText),
