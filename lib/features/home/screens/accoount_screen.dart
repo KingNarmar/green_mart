@@ -33,9 +33,7 @@ class AccoountScreen extends StatelessWidget {
 
             Expanded(
               child: ListView.separated(
-                itemBuilder: (context, index) {
-                  return Divider();
-                },
+                itemBuilder: (context, index) => Divider(),
                 separatorBuilder: (context, index) {
                   return AccountScreenTile(model: detailsList[index]);
                 },
