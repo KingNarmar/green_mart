@@ -12,7 +12,7 @@ class FavoraitsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Favorurite", style: TextStyles.title),
+        title: Text("Favoraits", style: TextStyles.title),
         centerTitle: true,
         backgroundColor: AppColors.white,
       ),
