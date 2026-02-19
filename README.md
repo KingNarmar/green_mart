@@ -177,9 +177,3 @@ lib/
 - flutter_svg
 - pinput
 - cupertino_icons
-
----
-
-## 🚀 How to Run
-
-1. Get packages:
