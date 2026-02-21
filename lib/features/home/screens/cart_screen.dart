@@ -1,8 +1,9 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide BottomSheet;
 import 'package:green_mart/core/styles/app_colors.dart';
 import 'package:green_mart/core/styles/text_styles.dart';
 import 'package:green_mart/core/widgets/main_button.dart';
 import 'package:green_mart/features/home/data/cart_tile_model.dart';
+import 'package:green_mart/features/home/widgets/bottom_sheet.dart';
 import 'package:green_mart/features/home/widgets/cart_tile.dart';
 
 class CartScreen extends StatelessWidget {
@@ -25,7 +26,18 @@ class CartScreen extends StatelessWidget {
       ),
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(bottom: 20, left: 20, right: 20),
-        child: MainButton(text: "Go to checkout", onPressed: () {}),
+        child: MainButton(
+          text: "Go to checkout",
+          onPressed: () {
+            showModalBottomSheet(
+              isScrollControlled: true,
+              context: context,
+              builder: (context) {
+                return BottomSheet();
+              },
+            );
+          },
+        ),
       ),
     );
   }
