@@ -43,6 +43,62 @@ List<ProductModel> offers = [
     weight: '1kg',
     image: 'https://5.imimg.com/data5/AK/RA/MY-68428614/apple.jpg',
   ),
+  ProductModel(
+    id: '1',
+    name: 'Banana',
+    price: 22,
+    weight: '1kg',
+    image: 'https://mana.md/wp-content/uploads/2021/11/banana-1025109_1280.jpg',
+  ),
+  ProductModel(
+    id: '2',
+    name: 'Apple',
+    price: 24,
+    weight: '1kg',
+    image: 'https://5.imimg.com/data5/AK/RA/MY-68428614/apple.jpg',
+  ),
+  ProductModel(
+    id: '3',
+    name: 'Orange',
+    price: 10.5,
+    weight: '1kg',
+    image: 'https://5.imimg.com/data5/AK/RA/MY-68428614/apple.jpg',
+  ),
+  ProductModel(
+    id: '4',
+    name: 'Carrot',
+    price: 5.5,
+    weight: '1kg',
+    image: 'https://5.imimg.com/data5/AK/RA/MY-68428614/apple.jpg',
+  ),
+  ProductModel(
+    id: '1',
+    name: 'Banana',
+    price: 22,
+    weight: '1kg',
+    image: 'https://mana.md/wp-content/uploads/2021/11/banana-1025109_1280.jpg',
+  ),
+  ProductModel(
+    id: '2',
+    name: 'Apple',
+    price: 24,
+    weight: '1kg',
+    image: 'https://5.imimg.com/data5/AK/RA/MY-68428614/apple.jpg',
+  ),
+  ProductModel(
+    id: '3',
+    name: 'Orange',
+    price: 10.5,
+    weight: '1kg',
+    image: 'https://5.imimg.com/data5/AK/RA/MY-68428614/apple.jpg',
+  ),
+  ProductModel(
+    id: '4',
+    name: 'Carrot',
+    price: 5.5,
+    weight: '1kg',
+    image: 'https://5.imimg.com/data5/AK/RA/MY-68428614/apple.jpg',
+  ),
 ];
 List<ProductModel> bestSelling = [
   ProductModel(

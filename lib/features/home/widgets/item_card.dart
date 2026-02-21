@@ -7,12 +7,12 @@ import 'package:green_mart/features/home/data/product_model.dart';
 
 class ItemCard extends StatelessWidget {
   const ItemCard({super.key, required this.model});
+
   final ProductModel model;
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 225,
-      width: 157,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         border: Border.all(color: AppColors.accentColor),
@@ -23,14 +23,37 @@ class ItemCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(child: Center(child: Image.network(model.image))),
-            SizedBox(height: 10),
-            Text("Bananas", style: TextStyles.title.copyWith(fontSize: 16)),
+            Expanded(
+              flex: 5,
+              child: SizedBox.expand(
+                child: Image.network(
+                  model.image,
+                  fit: BoxFit.contain,
+                  loadingBuilder: (context, child, progress) {
+                    if (progress == null) return child;
+                    return const Center(
+                      child: CircularProgressIndicator(strokeWidth: 2),
+                    );
+                  },
+                  errorBuilder: (context, error, stackTrace) {
+                    return const Center(
+                      child: Icon(
+                        Icons.broken_image_outlined,
+                        size: 40,
+                        color: Colors.grey,
+                      ),
+                    );
+                  },
+                ),
+              ),
+            ),
+            const SizedBox(height: 10),
+            Text(model.name, style: TextStyles.title.copyWith(fontSize: 16)),
             Text(
               model.weight,
               style: TextStyles.normalText.copyWith(color: AppColors.greyColor),
             ),
-            SizedBox(height: 17),
+            const SizedBox(height: 17),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
