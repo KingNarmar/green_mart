@@ -4,8 +4,8 @@ import 'package:green_mart/core/styles/text_styles.dart';
 import 'package:green_mart/features/home/data/product_model.dart';
 import 'package:green_mart/features/home/widgets/item_card.dart';
 
-class Beverages extends StatelessWidget {
-  const Beverages({super.key});
+class BeveragesScreen extends StatelessWidget {
+  const BeveragesScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

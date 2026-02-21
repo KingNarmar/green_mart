@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:green_mart/core/styles/app_themes.dart';
-import 'package:green_mart/features/home/screens/beverages.dart';
+import 'package:green_mart/features/home/screens/search_screen.dart';
 
 class GreenMart extends StatelessWidget {
   const GreenMart({super.key});
@@ -12,7 +12,7 @@ class GreenMart extends StatelessWidget {
       builder: (context, child) {
         return SafeArea(top: false, child: child ?? SizedBox());
       },
-      home: Beverages(),
+      home: SearchScreen(),
     );
   }
 }

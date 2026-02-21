@@ -24,8 +24,7 @@ class ItemCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(
-              flex: 5,
-              child: SizedBox.expand(
+              child: Center(
                 child: Image.network(
                   model.image,
                   fit: BoxFit.contain,
