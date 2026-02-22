@@ -1,7 +1,9 @@
 # 🥕 GreenMart
 
 A Flutter UI implementation based on the provided Figma design.  
-This project was developed through multiple Flutter course sessions and demonstrates clean UI implementation, reusable components, feature-based structure, and basic authentication flow design.
+Built through multiple Flutter course sessions and structured in a clean, **feature-based** way with reusable widgets and centralized styling.
+
+> This is a **UI-focused** project (screens + components + navigation flow).
 
 ---
 
@@ -17,7 +19,7 @@ This project was developed through multiple Flutter course sessions and demonstr
 - Login Screen
 - Sign Up Screen
 - Enter Mobile Number Screen
-- OTP Verification Screen
+- OTP Verification Screen (with countdown timer)
 
 ### 🟢 Session 12 – Home Module UI
 **Implemented Screens:**
@@ -28,12 +30,19 @@ This project was developed through multiple Flutter course sessions and demonstr
 - Account Screen
 - Bottom Navigation (Main Layout)
 
+### 🟢 Session 13 – Final App Completion
+**Implemented Screens / Features:**
+- Beverages Screen
+- Search Screen
+- Product Details Screen
+- Checkout Bottom Sheet (from Cart → “Go to checkout”)
+- (App flow completed ✅)
+
 ---
 
 ## 📸 Screenshots
 
 ### Session 10 – Intro Flow
-
 **Splash Screen**  
 <img src="screen_shots/splash_screen.png" width="300"/>
 
@@ -43,7 +52,6 @@ This project was developed through multiple Flutter course sessions and demonstr
 ---
 
 ### Session 11 – Authentication Flow
-
 **Login Screen**  
 <img src="screen_shots/login_screen.png" width="300"/>
 
@@ -59,7 +67,6 @@ This project was developed through multiple Flutter course sessions and demonstr
 ---
 
 ### Session 12 – Home Module UI
-
 **Home Screen**  
 <img src="screen_shots/home_screen.png" width="300"/>
 
@@ -74,6 +81,23 @@ This project was developed through multiple Flutter course sessions and demonstr
 
 **Account Screen**  
 <img src="screen_shots/account_screen.png" width="300"/>
+
+---
+
+### Session 13 – Final Completion
+> Add these screenshots using your same naming style inside `screen_shots/`
+
+**Beverages Screen**  
+<img src="screen_shots/beverages_screen.png" width="300"/>
+
+**Search Screen**  
+<img src="screen_shots/search_screen.png" width="300"/>
+
+**Product Details Screen**  
+<img src="screen_shots/product_details_screen.png" width="300"/>
+
+**Checkout Bottom Sheet**  
+<img src="screen_shots/checkout_bottom_sheet.png" width="300"/>
 
 ---
 
@@ -116,64 +140,51 @@ lib/
 │   │       ├── auth_footer.dart
 │   │       └── resend_code.dart
 │   │
-│   └── home/
-│       ├── data/
-│       │   ├── product_model.dart
-│       │   ├── category_model.dart
-│       │   ├── category_colors.dart
-│       │   ├── cart_tile_model.dart
-│       │   ├── favourit_model.dart
-│       │   └── account_screen_details_model.dart
+│   ├── home/
+│   │   ├── data/
+│   │   │   ├── account_screen_details_model.dart
+│   │   │   ├── cart_tile_model.dart
+│   │   │   ├── category_colors.dart
+│   │   │   ├── category_model.dart
+│   │   │   ├── favourit_model.dart
+│   │   │   └── product_model.dart
+│   │   ├── screens/
+│   │   │   ├── account_screen.dart
+│   │   │   ├── beverages_screen.dart
+│   │   │   ├── cart_screen.dart
+│   │   │   ├── explore_screen.dart
+│   │   │   ├── favoraits_screen.dart
+│   │   │   ├── home_screen.dart
+│   │   │   ├── order_accepted.dart
+│   │   │   └── search_screen.dart
+│   │   └── widgets/
+│   │       ├── account_screen_tile.dart
+│   │       ├── bottom_sheet.dart
+│   │       ├── bottom_sheet_tile.dart
+│   │       ├── cart_add_and_remove_items.dart
+│   │       ├── cart_tile.dart
+│   │       ├── category_card.dart
+│   │       ├── fave_tile.dart
+│   │       └── item_card.dart
+│   │
+│   └── product_details/
 │       ├── screens/
-│       │   ├── home_screen.dart
-│       │   ├── explore_screen.dart
-│       │   ├── cart_screen.dart
-│       │   ├── favoraits_screen.dart
-│       │   └── accoount_screen.dart
+│       │   └── product_details_screen.dart
 │       └── widgets/
-│           ├── item_card.dart
-│           ├── category_card.dart
-│           ├── cart_tile.dart
-│           ├── cart_add_and_remove_items.dart
-│           ├── fave_tile.dart
-│           └── account_screen_tile.dart
+│           ├── add_to_fav_section.dart
+│           ├── counter_section.dart
+│           ├── expansion_section.dart
+│           ├── nutritions_section.dart
+│           ├── pic_section.dart
+│           └── review_section.dart
 │
 ├── intro/
 │   └── screens/
 │       ├── splash_screen.dart
 │       └── onboarding_screen.dart
 │
-└── main/
-    └── widgets/
-        └── main_app_screen.dart
-
-
-### Structure Explanation
-- **core/** → Shared resources (colors, text styles, theme, navigation, validations, reusable widgets)
-- **features/auth/** → Authentication module (UI + widgets + separated timer logic)
-- **features/home/** → Home module (models/data + screens + reusable tiles/cards)
-- **intro/** → Intro flow screens (Splash + Onboarding)
-- **main/** → Main layout (Bottom Navigation container)
-
----
-
-## ✨ Features
-
-- Feature-based folder structure
-- Clean UI implementation following a Figma design
-- Reusable widgets (cards, tiles, form fields, buttons)
-- Centralized colors and text styles (Theme & Styles)
-- SVG asset support
-- OTP input field using **Pinput**
-- Countdown timer logic separated from UI
-- Form validation utilities
-- Basic responsive layout handling
-- Bottom Navigation layout for main flow screens
-
----
-
-## 📦 Dependencies
-
-- flutter_svg
-- pinput
-- cupertino_icons
+├── main/
+│   └── widgets/
+│       └── main_app_screen.dart
+│
+└── main.dart

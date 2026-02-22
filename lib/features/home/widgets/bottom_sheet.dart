@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:green_mart/core/functions/navigations.dart';
 import 'package:green_mart/core/styles/text_styles.dart';
 import 'package:green_mart/core/widgets/main_button.dart';
+import 'package:green_mart/features/home/screens/order_accepted.dart';
 import 'package:green_mart/features/home/widgets/bottom_sheet_tile.dart';
 
 class BottomSheet extends StatelessWidget {
-  const BottomSheet({
-    super.key,
-  });
+  const BottomSheet({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,10 +29,7 @@ class BottomSheet extends StatelessWidget {
         Divider(),
         BottomSheetTile(text1: "Payment", text2: "Select Method"),
         Divider(),
-        BottomSheetTile(
-          text1: "Promo Code",
-          text2: "Pick Discount",
-        ),
+        BottomSheetTile(text1: "Promo Code", text2: "Pick Discount"),
         Divider(),
         BottomSheetTile(text1: "Total Cost", text2: "\$13.97"),
         Divider(),
@@ -44,7 +41,12 @@ class BottomSheet extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.all(20),
-          child: MainButton(text: "Place Order", onPressed: () {}),
+          child: MainButton(
+            text: "Place Order",
+            onPressed: () {
+              pushTo(OrderAccepted(), context);
+            },
+          ),
         ),
       ],
     );
