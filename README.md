@@ -97,7 +97,7 @@ Built through multiple Flutter course sessions and structured in a clean, **feat
 <img src="screen_shots/product_details_screen.png" width="300"/>
 
 **Checkout Bottom Sheet**  
-<img src="screen_shots/checkout_bottom_sheet.png" width="300"/>
+<img src="screen_shots/bottom_sheet.png" width="300"/>
 
 ---
 
