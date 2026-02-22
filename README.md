@@ -188,3 +188,53 @@ lib/
 │       └── main_app_screen.dart
 │
 └── main.dart
+
+## 🏗 Structure Notes
+
+- **core/** → Shared resources (colors, text styles, theme, navigation helpers, validations, reusable widgets)
+
+- **features/auth/** → Authentication module (screens + widgets + separated timer logic)
+
+- **features/home/** → Home module (data models + screens + reusable UI tiles/cards + checkout bottom sheet)
+
+- **features/product_details/** → Product details screen split into clean reusable sections
+
+- **intro/** → Intro flow screens (Splash + Onboarding)
+
+- **main/** → Bottom navigation container (main layout)
+
+
+---
+
+## ✨ Features
+
+- Feature-based folder structure
+- Clean UI implementation following the Figma design
+- Reusable widgets (cards, tiles, buttons, form fields)
+- Centralized theme (colors + text styles)
+- SVG asset support using flutter_svg
+- OTP input using Pinput
+- Countdown timer logic separated from UI
+- Basic form validation utilities
+- Bottom navigation layout for main flow
+- Modular product details sections (image, counter, nutrition, review, etc.)
+- Checkout bottom sheet from Cart screen
+
+---
+
+## 📦 Dependencies (Main)
+
+- flutter_svg – SVG rendering  
+  https://pub.dev/packages/flutter_svg
+
+- pinput – OTP input UI  
+  https://pub.dev/packages/pinput
+
+- Flutter Documentation  
+  https://docs.flutter.dev/
+
+---
+
+## 👤 Author
+
+Mina Adly
