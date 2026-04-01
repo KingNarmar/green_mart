@@ -189,6 +189,7 @@ lib/
 │
 └── main.dart
 
+```
 ## 🏗 Structure Notes
 
 - **core/** → Shared resources (colors, text styles, theme, navigation helpers, validations, reusable widgets)
